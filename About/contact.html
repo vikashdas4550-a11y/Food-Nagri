@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Nagri | Contact Support</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+}
+
+header{
+background:#ff5722;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+.container{
+max-width:1100px;
+margin:40px auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.card h2{
+margin-bottom:20px;
+color:#ff5722;
+}
+
+.info{
+margin:18px 0;
+font-size:18px;
+}
+
+.info span{
+font-weight:bold;
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:16px;
+}
+
+textarea{
+height:120px;
+resize:none;
+}
+
+button{
+width:100%;
+padding:14px;
+background:#ff5722;
+color:white;
+border:none;
+border-radius:8px;
+font-size:18px;
+cursor:pointer;
+}
+
+button:hover{
+background:#e64a19;
+}
+
+iframe{
+width:100%;
+height:250px;
+border:none;
+border-radius:10px;
+margin-top:20px;
+}
+
+footer{
+margin-top:30px;
+background:#222;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.social a{
+text-decoration:none;
+font-size:25px;
+margin:0 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>📞 Contact Food Nagri Support</h1>
+
+<p>We're always here to help you.</p>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Contact Information</h2>
+
+<div class="info">
+<span>📞 Phone:</span><br>
++91 9135226044
+</div>
+
+<div class="info">
+<span>📧 Email:</span><br>
+vikashstm112@gmail.com
+</div>
+
+<div class="info">
+<span>📍 Address:</span><br>
+Government Engineering College, Siwan, Bihar
+</div>
+
+<div class="info">
+<span>🕒 Support Hours:</span><br>
+9:00 AM - 10:00 PM (Daily)
+</div>
+
+<div class="social">
+
+<a href="https://www.linkedin.com/in/vikash-kumar-b980bb37a">📘</a>
+
+<a href="https://www.instagram.com/mr.vi_kash4550">📸</a>
+
+<a href="https://github.com/vikashdas4550-a11y">🐦</a>
+
+<a href="https://www.facebook.com/share/1Bkx6Huk4b/">▶️</a>
+
+</div>
+
+<iframe
+src="https://www.google.com/maps?q=Government%20Engineering%20College%20Siwan&output=embed">
+</iframe>
+
+</div>
+
+<div class="card">
+
+<h2>Send Us a Message</h2>
+
+<form onsubmit="sendMessage(event)">
+
+<input
+type="text"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+placeholder="Your Email"
+required>
+
+<input
+type="tel"
+placeholder="Phone Number"
+required>
+
+<textarea
+placeholder="Write your message..."
+required></textarea>
+
+<button type="submit">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Food Nagri | Customer Support
+
+</footer>
+
+<script>
+
+function sendMessage(e){
+
+e.preventDefault();
+
+alert("✅ Thank you! Your message has been sent successfully.");
+
+e.target.reset();
+
+}
+
+</script>
+
+</body>
+</html>
