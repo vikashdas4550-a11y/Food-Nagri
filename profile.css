@@ -1,0 +1,499 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#f4f4f4;
+color:#333;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:15px 40px;
+
+background:#ff5722;
+
+color:white;
+
+position:sticky;
+
+top:0;
+
+z-index:999;
+
+}
+
+.logo{
+
+font-size:28px;
+
+font-weight:bold;
+
+}
+
+#darkModeBtn{
+
+width:45px;
+
+height:45px;
+
+border:none;
+
+border-radius:50%;
+
+cursor:pointer;
+
+font-size:22px;
+
+background:white;
+
+}
+
+/* =========================
+   PROFILE CONTAINER
+========================= */
+
+.profile-container{
+
+max-width:1200px;
+
+margin:40px auto;
+
+display:grid;
+
+grid-template-columns:320px 1fr 280px;
+
+gap:25px;
+
+padding:20px;
+
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.profile-card,
+.details-card,
+.menu-card,
+.orders-section{
+
+background:white;
+
+border-radius:15px;
+
+padding:25px;
+
+box-shadow:0 5px 20px rgba(0,0,0,.12);
+
+}
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.photo-box{
+
+position:relative;
+
+width:170px;
+
+height:170px;
+
+margin:auto;
+
+}
+
+.photo-box img{
+
+width:170px;
+
+height:170px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:5px solid #ff5722;
+
+}
+
+.camera{
+
+position:absolute;
+
+bottom:10px;
+
+right:10px;
+
+background:#ff5722;
+
+color:white;
+
+width:42px;
+
+height:42px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+border-radius:50%;
+
+cursor:pointer;
+
+font-size:18px;
+
+}
+
+.profile-card{
+
+text-align:center;
+
+}
+
+.profile-card h2{
+
+margin-top:20px;
+
+}
+
+.profile-card p{
+
+color:gray;
+
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.input-group{
+
+margin-bottom:18px;
+
+}
+
+.input-group label{
+
+display:block;
+
+margin-bottom:8px;
+
+font-weight:600;
+
+}
+
+.input-group input,
+.input-group textarea{
+
+width:100%;
+
+padding:12px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+font-size:16px;
+
+}
+
+textarea{
+
+height:120px;
+
+resize:none;
+
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+button{
+
+padding:13px;
+
+border:none;
+
+border-radius:10px;
+
+cursor:pointer;
+
+font-size:16px;
+
+background:#ff5722;
+
+color:white;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+background:#e64a19;
+
+}
+
+/* =========================
+   MENU
+========================= */
+
+.menu-card{
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+.menu-card a{
+
+text-decoration:none;
+
+padding:15px;
+
+margin-bottom:12px;
+
+background:#f8f8f8;
+
+border-radius:10px;
+
+color:#333;
+
+transition:.3s;
+
+}
+
+.menu-card a:hover{
+
+background:#ff5722;
+
+color:white;
+
+}
+
+/* =========================
+   ORDER HISTORY
+========================= */
+
+.orders-section{
+
+max-width:1200px;
+
+margin:30px auto;
+
+}
+
+.order-card{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px;
+
+margin-top:18px;
+
+background:#fafafa;
+
+border-radius:10px;
+
+border-left:6px solid #ff5722;
+
+}
+
+.order-status{
+
+padding:8px 15px;
+
+border-radius:20px;
+
+background:#22c55e;
+
+color:white;
+
+font-size:14px;
+
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+margin-top:40px;
+
+padding:20px;
+
+text-align:center;
+
+background:#222;
+
+color:white;
+
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark{
+
+background:#121212;
+
+color:white;
+
+}
+
+body.dark .profile-card,
+body.dark .details-card,
+body.dark .menu-card,
+body.dark .orders-section{
+
+background:#1e1e1e;
+
+color:white;
+
+}
+
+body.dark input,
+body.dark textarea{
+
+background:#2b2b2b;
+
+color:white;
+
+border:1px solid #555;
+
+}
+
+body.dark .menu-card a{
+
+background:#2b2b2b;
+
+color:white;
+
+}
+
+body.dark .menu-card a:hover{
+
+background:#ff5722;
+
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:992px){
+
+.profile-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.header{
+
+padding:15px;
+
+}
+
+.logo{
+
+font-size:22px;
+
+}
+
+.profile-container{
+
+padding:15px;
+
+}
+
+.photo-box{
+
+width:140px;
+
+height:140px;
+
+}
+
+.photo-box img{
+
+width:140px;
+
+height:140px;
+
+}
+
+.order-card{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:12px;
+
+}
+
+button{
+
+width:100%;
+
+}
+
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media(max-width:480px){
+
+.profile-card,
+.details-card,
+.menu-card{
+
+padding:18px;
+
+}
+
+.logo{
+
+font-size:20px;
+
+}
+
+}
