@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Food Nagri Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Food Nagri Dashboard</h1>
+
+<div class="dashboard">
+
+<div class="box">
+<h2>Total Orders</h2>
+<h1 id="orders">0</h1>
+</div>
+
+<div class="box">
+<h2>Total Revenue</h2>
+<h1 id="revenue">₹0</h1>
+</div>
+
+<div class="box">
+<h2>Pending</h2>
+<h1 id="pending">0</h1>
+</div>
+
+<div class="box">
+<h2>Delivered</h2>
+<h1 id="delivered">0</h1>
+</div>
+
+</div>
+
+<input
+type="text"
+id="search"
+placeholder="Search Customer..."
+>
+
+<div id="ordersList"></div>
+
+<script type="module" src="./dashboard.js"></script>
+
+</body>
+</html>

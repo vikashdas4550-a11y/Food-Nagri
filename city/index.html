@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodNagri</title> </title>
+  <link rel="stylesheet" href="city-food.css" />
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+<nav class="navbar">
+  <div class="navbar-inner">
+
+    <!-- Logo -->
+    <a href="#" class="nav-logo">
+      <div class="logo-mark">🍜</div>
+      Food<span><em>Nagri</em></span>
+    </a>
+
+    <!-- City Selector -->
+     <div class="city-selector" onclick="alert('City selector — connect to geolocation API!')">
+      <span class="cs-icon">📍</span>
+      <div class="cs-text">
+        <div class="cs-label">Delivering to</div>
+        <div class="cs-city">Sitamarhi</div>
+      </div>
+      <span class="cs-arrow">▾</span>
+    </div> 
+
+    <!-- Search -->
+    <!-- Search -->
+    <div class="nav-search">
+      <span class="s-icon">🔍</span>
+       <input type="text" placeholder="Search Foods..." list="food-list">
+
+  <datalist id="food-list">
+    <option value="banana">
+    <option value="Litti Chokha">
+    <option value="Balushahi">
+    <option value="lichchi">
+    <option value="Pidakiya">
+    <option value="Tilkut">
+    <option value="Puri Sabzi">
+    <option value="Jalebi">
+    <option value="Khaja">
+    <option value="Samosa">
+  </datalist>
+
+    </div>
+
+    <!-- Links -->
+    <div class="nav-links">
+      <a href="#cities"   class="nav-link active">🏙️ Cities</a>
+      <a href="#dishes"   class="nav-link">🍽️ Dishes</a>
+      <a href="login.html"         class="nav-link btn-outline">Log in</a>
+      <a href="night.html" class="nav-link btn-outline" style="border: 0.5px solid rgb(243, 243, 243); border-radius: 10px; ">Late Night</a>
+    </div>
+    </div>
+
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="home">
+  <div class="hero-blob hero-blob-1"></div>
+  <div class="hero-blob hero-blob-2"></div>
+
+  <div class="hero-inner">
+
+    <!-- Left -->
+    <div class="hero-left">
+      <div class="hero-eyebrow">🏆 Bihar's #1 Local Food Discovery Platform</div>
+      <h1 class="hero-title">
+        New in the city?<br />
+        Eat like a <span class="ht-city">local</span><br />
+        <span class="ht-highlight">from Day One.</span>
+      </h1>
+      <p class="hero-desc">
+        Skip the tourist traps.>FoodNagri</title> curates the most iconic, beloved
+        eateries in every city — from legendary street stalls to celebrated
+        fine-dining gems — all in one place.
+      </p>
+
+  
+      <!-- Search Box -->
+      
+<div class="hero-search-wrap">
+    <div class="dropdown">
+        <div class="dropdown-btn">📍<b> Select City ⬇</b></div>
+
+        <div class="dropdown-list">
+            <div>Sitamarhi</div>
+            <div>Siwan</div>
+            <div>Patna</div>
+            <div>Hajipur</div>
+            <div>Gaya</div>
+            <div>West Champaran</div>
+            <div>Muzaffarpur</div>
+            <div>Darbhanga</div>
+            <div>Sheohar</div>
+            <div>Bhojpur</div>
+            <div>Gopalganj</div>
+        </div>
+    </div>
+</div>
+
+      <!-- Stats -->
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hs-num">12<span>K+</span></div>
+          <div class="hs-lbl">Famous Eateries</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hs-num">15<span>+</span></div>
+          <div class="hs-lbl">Cities Covered</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hs-num">3.2<span>k</span></div>
+          <div class="hs-lbl">Happy Foodies</div>
+        </div>
+        <!-- <div class="hero-stat">
+          <div class="hs-num">4.9<span>★</span></div>
+          <div class="hs-lbl">App Rating</div>
+        </div> -->
+      </div>
+    </div><!-- /hero-left -->
+
+    <!-- Right — Quick City Cards -->
+    <div class="hero-right">
+      <div class="hero-city-card" onclick="switchCity('Sitamarhi')">
+        <span class="hcc-emoji">🛕</span>
+        <div class="hcc-info">
+          <div class="hcc-name">Sitamarhi</div>
+          <div class="hcc-count">50+ iconic spots</div>
+        </div>
+        <span class="hcc-arrow">→</span>
+      </div>
+      <div class="hero-city-card" onclick="switchCity('Patna')">
+        <span class="hcc-emoji">🏛️</span>
+        <div class="hcc-info">
+          <div class="hcc-name">Patna</div>
+          <div class="hcc-count">100+ iconic spots</div>
+        </div>
+        <span class="hcc-arrow">→</span>
+      </div>
+      <div class="hero-city-card" onclick="switchCity('Gaya')">
+        <span class="hcc-emoji">🧘</span>
+        <div class="hcc-info">
+          <div class="hcc-name">Gaya </div>
+          <div class="hcc-count">50+ iconic spots</div>
+        </div>
+        <span class="hcc-arrow">→</span>
+      </div>
+      <div class="hero-city-card" onclick="switchCity('Siwan')">
+        <span class="hcc-emoji">🌸</span>
+        <div class="hcc-info">
+          <div class="hcc-name">Siwan</div>
+          <div class="hcc-count">30+ iconic spots</div>
+        </div>
+        <span class="hcc-arrow">→</span>
+      </div>
+      <div class="hero-city-card" onclick="switchCity('Muzaffarpur')">
+        <span class="hcc-emoji">🍒</span>
+        <div class="hcc-info">
+          <div class="hcc-name">Muzaffarpur</div>
+          <div class="hcc-count">50+ iconic spots</div>
+        </div>
+        <span class="hcc-arrow">→</span>
+      </div>
+    </div><!-- /hero-right -->
+
+  </div><!-- /hero-inner -->
+</section>
+
+<!-- ============================================================
+     HOW IT WORKS
+     ============================================================ -->
+<section class="how-section">
+  <div class="container">
+    <span class="section-label">⚙️ How It Works</span>
+    <h2 class="section-title">Eating local has never been easier</h2>
+    <p class="section-sub">Four simple steps from newcomer to neighbourhood foodie</p>
+
+    <div class="how-grid">
+      <div class="how-card reveal">
+        <div class="how-step">1</div>
+        <h3>📍 Pick Your City</h3>
+        <p>Choose your city and we'll instantly surface the most legendary, must-try eateries in that area.</p>
+      </div>
+      <div class="how-card reveal">
+        <div class="how-step">2</div>
+        <h3>🍽️ Browse Iconic Spots</h3>
+        <p>Curated lists of famous local restaurants, street vendors, and heritage eateries loved by residents.</p>
+      </div>
+      <div class="how-card reveal">
+        <div class="how-step">3</div>
+        <h3>🛒 Order or Reserve</h3>
+        <p>Order delivery to your door or book a table — whatever suits your mood and schedule.</p>
+      </div>
+      <div class="how-card reveal">
+        <div class="how-step">4</div>
+        <h3>⭐ Share & Explore</h3>
+        <p>Rate your experience and discover more hidden gems recommended by the local food community.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ============================================================
+     CITY RESTAURANT TABS
+     ============================================================ -->
+<section class="cities-section" id="cities">
+  <div class="container">
+    <span class="section-label">🏙️ Browse by City</span>
+    <h2 class="section-title">Famous Eateries Near You</h2>
+    <p class="section-sub">Handpicked iconic restaurants, beloved by locals in every city</p>
+
+    <!-- City Tabs -->
+<div class="city-tabs" id="cityTabs">
+      <a class="city-tab active" href="city/sitamarhi.html" < span class="ct-emoji">🛕</span> Sitamarhi</a>
+      <a class="city-tab" href="city/patna.html"><span class="ct-emoji">🏛️</span> Patna</a>
+      <a class="city-tab" href="city/gaya.html"><span class="ct-emoji">🧘</span> Gaya</a>
+      <a class="city-tab" href="city/muzaffarpur.html"><span class="ct-emoji">🍒</span> Muzaffarpur</a>
+      <a class="city-tab" href="city/siwan.html"><span class="ct-emoji">🌸</span> Siwan</a>
+      <a class="city-tab" href="city/hajipur.html"><span class="ct-emoji">🍌</span> Hajipur</a>
+      <a class="city-tab" href="city/west-champaran.html"><span class="ct-emoji">📜</span> West Champaran</a>
+     
+    </div>
+    </div>
+
+   
+  </div>
+</section>
+
+<!-- ============================================================
+     FEATURED DISHES
+     ============================================================ -->
+<section class="dishes-section" id="dishes">
+  <div class="container">
+    <div class="dishes-header">
+      <div>
+        <span class="section-label">🍽️ Signature Dishes</span>
+        <h2 class="section-title">Iconic Dishes You Must Try</h2>
+        <p class="section-sub">The legendary bites that define each city's food identity</p>
+      </div>
+      <span class="view-all" onclick="alert('Full dish catalogue coming soon!')">View All Dishes →</span>
+    </div>
+
+    <div class="dishes-scroll">
+      <div class="dish-card reveal">
+        <img src="photo/balushahi.jpeg" alt="Balushahi" />
+        <div class="dish-card-body">
+          <div class="dish-name">Balushahi</div>
+          <div class="dish-rest">📍 Runnisaipur — Sitamarhi</div>
+          <div class="dish-price-row">
+            <div class="dish-price">₹120</div>
+            <button class="dish-add" onclick="addToCart('Balushahi')">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="dish-card reveal">
+        <img src="photo/littichokha.jpeg" alt="Litti Chokha" />
+        <div class="dish-card-body">
+          <div class="dish-name">Litti Chokha</div>
+          <div class="dish-rest">📍Bihar </div>
+          <div class="dish-price-row">
+            <div class="dish-price">₹25</div>
+            <button class="dish-add" onclick="addToCart('Litti Chokha')">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="dish-card reveal">
+        <img src="photo/lichi.jpeg" alt="Lichi" />
+        <div class="dish-card-body">
+          <div class="dish-name">Lichi</div>
+          <div class="dish-rest">📍 Muzaffarpur</div>
+          <div class="dish-price-row">
+            <div class="dish-price">₹100</div>
+            <button class="dish-add" onclick="addToCart('Lichi')">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="dish-card reveal">
+        <img src="photo/banana.jpeg" alt="Banana" />
+        <div class="dish-card-body">
+          <div class="dish-name">Banana</div>
+          <div class="dish-rest">📍 Hajipur</div>
+          <div class="dish-price-row">
+            <div class="dish-price">₹30</div>
+            <button class="dish-add" onclick="addToCart('Banana')">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="dish-card reveal">
+        <img src="photo/chenajalebi.jpeg" alt="Chena Jalebi" />
+        <div class="dish-card-body">
+          <div class="dish-name">Chena Jalebi</div>
+          <div class="dish-rest">📍Laxmipur — Sitamarhi</div>
+          <div class="dish-price-row">
+            <div class="dish-price">₹25</div>
+            <button class="dish-add" onclick="addToCart('Chena Jalebi')">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="dish-card reveal">
+        <img src="photo/pidakiya.jpeg" alt="Pidakiya" />
+        <div class="dish-card-body">
+          <div class="dish-name">Pidakiya</div>
+          <div class="dish-rest">📍 Thawe-Gopalganj </div>
+          <div class="dish-price-row">
+            <div class="dish-price">₹15</div>
+            <button class="dish-add" onclick="addToCart('Pidakiya')">+</button>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="fg-brand">
+        <div class="fg-logo">🍜FoodNagri</title></div>
+        <p>FoodNagri</title> helps newcomers discover the most iconic, beloved eateries in any Indian city — from legendary street stalls to celebrated restaurants — curated by locals, for locals.</p>
+        <div class="fg-socials">
+          <span class="fg-social">𝕏</span>
+          <span class="fg-social">f</span>
+          <span class="fg-social">in</span>
+          <span class="fg-social">▶</span>
+        </div>
+      </div>
+
+      <!-- Cities -->
+      <div class="footer-col">
+        <h4>Explore Cities Dishes</h4>
+        <ul>
+          <li>Katihar</li>
+          <li>Arwal</li>
+          <li>Bhagalpur</li>
+          <li>Bhojpur</li>
+          <li>Darbhanga</li>
+          <li>Rohtas</li>
+          <li>Saharsa</li>
+          <li>Aurangabad</li>
+          <li>Jehanabad</li>
+       
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/About/about.html">About Us</a></li>
+          <li><a href="/About/mission.html">Our Mission</a></li>
+          <li><a href="/About/blog.html">Food Guides Blog</a></li>
+       
+        </ul>
+      </div>
+
+      <!-- Help -->
+      <div class="footer-col">
+        <h4>Help & Legal</h4>
+        <ul>
+          <li><a href="/About/faq.html">FAQs</a></li>
+          <li><a href="/About/contact.html">Contact Support</a></li>
+          <li><a href="/About/privacy.html">Privacy Policy</a></li>
+          <li><a href="/About/terms.html">Terms of Use</a></li>
+          <li><a href="/About/cookie.html">Cookie Policy</a></li>
+         
+          <li><a href="/About/security.html">Security</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p></title> Exploring Bihar's incredible food culture. ❤️</p>
+      
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to Top -->
+<button class="scroll-fab" id="scrollFab" onclick="window.scrollTo({top:0,behavior:'smooth'})">▲</button>
+
+</body>
+</html>

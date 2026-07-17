@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Nagri</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Header -->
+
+<header>
+
+<div class="logo">
+🍔 Siwan
+</div>
+
+<nav>
+
+<a href="./index.html">Home</a>
+<a href="#about">About</a>
+<a href="#menu">Menu</a>
+<a href="../About/contact.html">Contact</a>
+
+<!-- <i class="fas fa-shopping-cart cart">
+<span id="count">0</span>
+</i> -->
+<!-- <i class="fa-solid fa-cart-shopping"></i>
+<span id="cart-count">0</span> -->
+<a href="cart.html">
+<i class="fa-solid fa-cart-shopping"></i>
+<span id="cart-count">0</span>
+</a>
+
+</nav>
+
+</header>
+
+<!-- Hero Section
+
+<section class="hero" id="home">
+
+ <div class="hero-text">
+
+<h1>Delicious Food Delivered Fast</h1> 
+
+<p>
+Order your favourite food anytime anywhere.
+Fresh • Fast • Delicious
+</p>
+   
+<a href="#menu">
+<button>Order Now</button>
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="images/hero.png" alt="Burger">
+<i class="fa-solid fa-heart heart"></i>
+</div>
+
+</section> -->
+<!-- About
+
+<section class="about" id="about">
+
+<h2>About Food Nagri</h2>
+
+<p>
+
+Food Nagri is an online food ordering platform where
+customers can discover restaurants, explore delicious meals,
+and order food quickly with a simple and user-friendly interface.
+
+</p>   -->
+
+</section>
+<div class="search-box">
+    <input
+        type="text"
+        id="search"
+        placeholder="Search your favorite food..."
+    >
+</div>
+
+<!-- Menu -->
+
+<section class="menu" id="menu">
+
+<h2>Popular Food</h2>
+
+<div class="container">
+
+<div class="card">
+
+<img src="image/chicken.jpeg">
+<i class="fa-solid fa-heart heart"></i>
+
+<h3> Chicken</h3>
+
+<p>Fresh Chicken </p>
+
+<h4>₹149</h4>
+<button onclick="addToCart('Chicken',149,'image/chicken.jpeg')">
+    Add To Cart
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="image/eggroll.jpeg">
+<i class="fa-solid fa-heart heart"></i>
+<h3>Egg Roll</h3>
+
+<p>Healthy egg roll</p>
+
+<h4>₹59</h4>
+
+<button onclick="addToCart('Egg Roll',59,'image/eggroll.jpeg')">
+    Add To Cart
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="image/lachhhaparatha.jpeg">
+<i class="fa-solid fa-heart heart"></i>
+<h3>Lachha Paratha</h3>
+
+<p>Extra Cheese Loaded</p>
+
+<h4>₹49</h4>
+
+<button onclick="addToCart('Lachha Paratha',49,'image/lachhhaparatha.jpeg')">
+    Add To Cart
+</button>
+</div>
+
+<div class="card">
+
+<img src="image/chicken tass.jpeg">
+<i class="fa-solid fa-heart heart"></i>
+<h3>Chicken Tass</h3>
+
+<p>Special Premium Burger</p>
+
+<h4>₹59</h4>
+<button onclick="addToCart('Chicken Tass',59,'image/chicken tass.jpeg')">
+    Add To Cart
+</button>
+
+</div>
+<div class="card">
+
+<img src="image/biryani.jpeg">
+<i class="fa-solid fa-heart heart"></i>
+<h3>Chicken Biryani</h3>
+
+<p>Extra Cheese Loaded</p>
+
+<h4>₹149</h4>
+<button onclick="addToCart('Chicken Biryani',149,'image/biryani.jpeg')">
+    Add To Cart
+</button>
+
+</div>
+<div class="card">
+
+<img src="image/Pidakiya.jpeg">
+<i class="fa-solid fa-heart heart"></i>
+<h3>Pidakiya</h3>
+
+<p>Extra Sweet Loaded</p>
+
+<h4>₹249</h4>
+<button onclick="addToCart('Pidakiya',249,'image/Pidakiya.jpeg')">
+    Add To Cart
+</button>
+<!-- <button class="add">Add To Cart</button> -->
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea placeholder="Message"></textarea>
+
+<button>Send Message</button>
+
+</form>
+
+</section> -->
+
+<!-- Footer -->
+
+<footer>
+
+<p>
+
+© 2026 Food Nagri | Designed by Vikash Kumar
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+<script src="cart.js"></script>
+
+</body>
+
+</html>
