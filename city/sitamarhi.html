@@ -5,156 +5,160 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sitamarhi Famous Food</title>
 
-<style>
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-<link rel="stylesheet" href="style.css"> 
-/* *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins', sans-serif;
-}
-
-body{
-    background:linear-gradient(120deg,#8e0303,#99f2c8);
-    padding:40px;
-}
-
-/* Title 
-h1{
-    text-align:center;
-    margin-bottom:40px;
-    color:#fff;
-}
-
-/* Grid 
-.container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-/* Card 
-.card{
-    background:#fff;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 5px 20px rgba(0,0,0,0.2);
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-10px) scale(1.03);
-}
-
-/* Image 
-.card img{
-    width:100%;
-    height:180px;
-    object-fit:cover;
-}
-
-/* Content 
-.card-content{
-    padding:15px;
-}
-
-.card-content h3{
-    margin-bottom:10px;
-}
-
-.card-content p{
-    font-size:14px;
-    color:#555;
-}
-
-/* Button 
-.btn{
-    display:block;
-    text-align:center;
-    margin:30px auto;
-    padding:10px 20px;
-    background:#ff4d6d;
-    color:#fff;
-    text-decoration:none;
-    border-radius:20px;
-    width:200px;
-}
-
-.btn:hover{
-    background:#ff1e4d;
-}
-
-</style> */
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
-<section class="menu" id="menu"></section>
-<h1>🍽️ Famous Foods of Sitamarhi</h1>
+
+    <!-- Header -->
+
+<header>
+
+<div class="logo">
+🍔 Sitamarhi
+</div>
+
+<nav>
+
+<a href="./index.html">Home</a>
+<a href="#about">About</a>
+<a href="#menu">Menu</a>
+<a href="../About/contact.html">Contact</a>
+<a href="cart.html">
+<i class="fa-solid fa-cart-shopping"></i>
+<span id="cart-count">0</span>
+</a>
+
+</nav>
+
+</header>
+
+</section>
+<div class="search-box">
+    <input
+        type="text"
+        id="search"
+        placeholder="Search your favorite food..."
+    >
+</div>
+
+
+<!-- Menu -->
+
+<section class="menu" id="menu">
+
+<h2>🍽️ Famous Foods of Sitamarhi</h2>
 
 <div class="container">
 
 <div class="card">
-<img src="/littichokha.jpeg" alt="Litti Chokha">
-<div class="card-content">
-<h2>Litti Chokha</h2>
-<h5>Bihar’s most famous traditional dish with roasted litti and chokha.</h5>
+
+<img src="../photo/littichokha.jpeg" >
+<i class="fa-solid fa-heart heart"></i>
+
+<h3> Litti Chokha</h3>
+
+<p>Fresh Litti </p>
 <a href="https://maps.app.goo.gl/c7yxZpsMb3PFAaYf8">📍 International LiTTi Chokha store</a>
-</div>
+
+<h4>₹29</h4>
+<button onclick="addToCart('Litti Chokha',29,'/littichokha.jpeg')">
+    Add To Cart
+</button>
 </div>
 
 <div class="card">
-<img src="/photo/malpua.png" alt="Malpua">
-<div class="card-content">
-<h2>Malpua</h2>
-<h5>A sweet pancake served with rabri, popular during festivals.</h5>
+
+<img src="../photo/malpua.png">
+<i class="fa-solid fa-heart heart"></i>
+<h3>Malpua</h3>
+
+<p>Popular during festivals.</p>
+
+<h4>₹59</h4>
 <a href="https://maps.app.goo.gl/hMXCP7SLu9eCTu6d6"> 📍 Manpasand Sweets</a>
+<button onclick="addToCart('Malpua',59,'../photo/malpua.png')">
+    Add To Cart
+</button>
 </div>
-</div>
-
 <div class="card">
-<img src="/photo/khichri.jpg" alt="Khichri">
-<div class="card-content">
-<h2>Khichri</h2>
-<h5>Healthy rice and lentil dish served with ghee and pickle.</h5>
+
+<img src="../photo/khichri.jpg">
+<i class="fa-solid fa-heart heart"></i>
+<h3>Khichri</h3>
+
+<p>Healthy rice and lentil dish served </p>
 <a href="https://maps.app.goo.gl/Z3EzfBNhR69sKtEi9">📍अतिथि फैमिली रेस्टोरेंट सीतामढ़ी</a>
-</div>
-</div>
+<h4>₹100</h4>
 
+<button onclick="addToCart('Khichri',100,'../photo/khichri.jpg')">
+    Add To Cart
+</button>
+</div>
 <div class="card">
-<img src="/photo/samosa.jpg" alt="Samosa">
-<div class="card-content">
-<h2>Samosa</h2>
-<h5>Crispy snack filled with spicy potatoes, loved by everyone.</h5>
+
+<img src="../photo/samosa.jpg">
+<i class="fa-solid fa-heart heart"></i>
+<h3>Samosa</h3>
+
+<p>Special Samosa</p>
 <a href="https://maps.app.goo.gl/ENEdzZNUA9xuL2r36">📍Chaat Ka Chaska</a>
-</div>
+
+<h4>₹29</h4>
+<button onclick="addToCart('Samosa',29,'../photo/samosa.jpg')">
+    Add To Cart
+</button>
 </div>
 
 <div class="card">
-<img src="/photo/Chanaghugni.jpeg" alt="Chana Ghugni">
-<div class="card-content">
-<h2>Chana Ghugni</h2>
-<h5>A spicy street food made with chickpeas and masala.</h5>
+
+<img src="../photo/Chanaghugni.jpeg">
+<i class="fa-solid fa-heart heart"></i>
+<h3>Chana Ghugni</h3>
+
+<p>Healthy chickpea dish</p>
+
+<h4>₹39</h4>
 <a href="https://maps.app.goo.gl/hituuJU6FAUHkYSr7"> 📍𝐎𝐍𝐄 𝐁𝐀𝐊𝐄𝐑𝐒</a>
-</div>
+<button onclick="addToCart('Chana Ghugni',39,'../photo/Chanaghugni.jpeg')">
+    Add To Cart
+</button>
+
 </div>
 
+
 <div class="card">
-<img src="/photo/thekua.jpg" alt="Thekua">
-<div class="card-content">
-<h2>Thekua</h2>
-<h5>Traditional sweet made during Chhath festival.</h5>
+<img src="../photo/thekua.jpg">
+<i class="fa-solid fa-heart heart"></i>
+<h3>Thekua</h3>
+
+<p>Traditional sweet </p>
+
+<h4>₹99</h4>
 <a href="https://maps.app.goo.gl/tysV1GrUi3n6VEEt7"> 📍BIHARI THEKUA</a>
-</div>
+<button onclick="addToCart('Thekua',99,'../photo/thekua.jpg')">
+    Add To Cart
+</button>
+
 </div>
 
+
 <div class="card">
-<img src="/photo/dahichura.jpeg" alt="Dahi Chura">
-<div class="card-content">
-<h2>Dahi Chura</h2>
-<h5>Flattened rice with curd, a refreshing and simple dish.</h5>
+
+<img src="/photo/dahichura.jpeg">
+<i class="fa-solid fa-heart heart"></i>
+<h3>Dahi Chura</h3>
+
+<p>Healthy dahi chura</p>
+
+<h4>₹99</h4>
 <a href="https://maps.app.goo.gl/rm7NuuFLtSuj5eN17"> 📍Chura Dahi</a>
-</div>
+<button onclick="addToCart('Dahi Chura',99,'/photo/dahichura.jpeg')">
+    Add To Cart
+</button>
+
 </div>
 
 <div class="card">
@@ -163,30 +167,27 @@ h1{
 <h3>Murhi Kachari</h3>
 <p>Spicy and flavorful curry served with rice or roti.</p>
 <h4>₹49</h4>
-<button onclick="addToCart('Lachha Paratha',49,'image/lachhhaparatha.jpeg')">
-    Add To Cart
-</button>
 <a href="https://maps.app.goo.gl/Sx3ynD8fzcgxsHZYA"> 📍Chaat Ka Chaska</a>
-</div>
-</div>
-
-</div>
-<div class="card">
-
-<img src="image/lachhhaparatha.jpeg">
-<i class="fa-solid fa-heart heart"></i>
-<h3>Lachha Paratha</h3>
-
-<p>Extra Cheese Loaded</p>
-
-<h4>₹49</h4>
-
-<button onclick="addToCart('Lachha Paratha',49,'image/lachhhaparatha.jpeg')">
+<button onclick="addToCart('Murhi Kachari',49,'../photo/murhikachari.png')">
     Add To Cart
 </button>
+
+</div>
+ </div>
+
 </div>
 
-<a href="index.html" class="btn">⬅ Back to Home</a>
+<footer>
 
+<p>
+
+© 2026 Food Nagri | Designed by Vikash Kumar
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+<script src="cart.js"></script>
 </body>
 </html>
