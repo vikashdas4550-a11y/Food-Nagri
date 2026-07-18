@@ -2,33 +2,116 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Our Mission</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Mission - Food Nagri</title>
 
 <style>
-body{
-    font-family:'Segoe UI', sans-serif;
-    background:#111;
-    color:#fff;
-    text-align:center;
-    padding:60px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
 
-h1{
-    color:#ff4d6d;
+body{
+    background:#f5f5f5;
+}
+
+.mission{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+}
+
+.box{
+    max-width:900px;
+    background:#fff;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    text-align:center;
+}
+
+.box h1{
+    color:#ff6600;
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.box h3{
+    color:#444;
+    margin-bottom:20px;
+}
+
+.box p{
+    font-size:18px;
+    line-height:1.8;
+    color:#666;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#ff6600;
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#e65100;
+}
+
+@media(max-width:768px){
+
+.box{
+padding:25px;
+}
+
+.box h1{
+font-size:35px;
+}
+
+.box p{
+font-size:16px;
+}
+
 }
 </style>
+
 </head>
 
 <body>
 
-<h1>Our Mission 🚀</h1>
+<section class="mission">
+
+<div class="box">
+
+<h1>🍔 Our Mission</h1>
+
+<h3>Delivering Happiness Through Food</h3>
 
 <p>
-Our mission is to connect people with their favorite food easily.
-We strive to provide accurate, fast, and enjoyable food discovery experiences.
+Our mission is to make food ordering simple, fast, and reliable.
+Food Nagri connects customers with their favorite restaurants,
+bringing fresh and delicious meals directly to their doorstep.
+
+We believe everyone deserves quality food with quick delivery,
+secure online ordering, and affordable prices while supporting
+local restaurants and food businesses.
 </p>
 
-<a href="index.html">⬅ Back to Home</a>
+<a href="index.html" class="btn">Back to Home</a>
+
+</div>
+
+</section>
 
 </body>
 </html>
