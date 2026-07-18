@@ -3,115 +3,195 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Mission - Food Nagri</title>
+<title>Our Mission | Food Nagri</title>
 
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-    background:#f5f5f5;
+background:linear-gradient(135deg,#fff8f2,#ffe9d6);
 }
 
-.mission{
-    width:100%;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:50px;
+header{
+background:#ff6600;
+color:white;
+padding:20px;
+text-align:center;
+font-size:32px;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
 }
 
-.box{
-    max-width:900px;
-    background:#fff;
-    padding:40px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-    text-align:center;
+.mission-section{
+max-width:1200px;
+margin:60px auto;
+padding:40px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:50px;
+flex-wrap:wrap;
 }
 
-.box h1{
-    color:#ff6600;
-    font-size:45px;
-    margin-bottom:20px;
+.mission-image img{
+width:450px;
+max-width:100%;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
 }
 
-.box h3{
-    color:#444;
-    margin-bottom:20px;
+.mission-content{
+flex:1;
+min-width:320px;
 }
 
-.box p{
-    font-size:18px;
-    line-height:1.8;
-    color:#666;
-    margin-bottom:30px;
+.mission-content h1{
+font-size:45px;
+color:#ff6600;
+margin-bottom:20px;
+}
+
+.mission-content h3{
+color:#444;
+margin-bottom:20px;
+font-size:22px;
+}
+
+.mission-content p{
+font-size:18px;
+line-height:1.8;
+color:#555;
+text-align:justify;
+margin-bottom:20px;
+}
+
+.points{
+margin-top:20px;
+}
+
+.points p{
+font-size:18px;
+margin:12px 0;
 }
 
 .btn{
-    display:inline-block;
-    padding:15px 35px;
-    background:#ff6600;
-    color:#fff;
-    text-decoration:none;
-    border-radius:30px;
-    font-size:18px;
-    transition:.3s;
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:#ff6600;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-size:18px;
+transition:.3s;
 }
 
 .btn:hover{
-    background:#e65100;
+background:#e65100;
+transform:scale(1.05);
+}
+
+footer{
+margin-top:50px;
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
 }
 
 @media(max-width:768px){
 
-.box{
-padding:25px;
+.mission-content h1{
+font-size:34px;
+text-align:center;
 }
 
-.box h1{
-font-size:35px;
+.mission-content h3{
+text-align:center;
 }
 
-.box p{
+.mission-content p{
 font-size:16px;
 }
 
+.btn{
+display:block;
+width:220px;
+margin:30px auto;
+text-align:center;
 }
+
+}
+
 </style>
 
 </head>
 
 <body>
 
-<section class="mission">
+<header>
+🍔 Food Nagri
+</header>
 
-<div class="box">
+<section class="mission-section">
 
-<h1>🍔 Our Mission</h1>
+<div class="mission-image">
 
-<h3>Delivering Happiness Through Food</h3>
+<img src="images/mission.jpg" alt="Our Mission">
+
+</div>
+
+<div class="mission-content">
+
+<h1>Our Mission</h1>
+
+<h3>Delivering Happiness, One Meal at a Time</h3>
 
 <p>
-Our mission is to make food ordering simple, fast, and reliable.
-Food Nagri connects customers with their favorite restaurants,
-bringing fresh and delicious meals directly to their doorstep.
 
-We believe everyone deserves quality food with quick delivery,
-secure online ordering, and affordable prices while supporting
-local restaurants and food businesses.
+At <b>Food Nagri</b>, our mission is to transform the way people enjoy food by making online food ordering simple, fast, secure, and affordable. We connect customers with trusted local restaurants and ensure every meal is delivered fresh, hot, and on time.
+
 </p>
 
-<a href="index.html" class="btn">Back to Home</a>
+<p>
+
+We are committed to supporting local food businesses while providing customers with an easy-to-use platform where they can discover new restaurants, explore delicious menus, and enjoy hassle-free doorstep delivery.
+
+</p>
+
+<div class="points">
+
+<p>🍽 Fresh & Quality Food</p>
+
+<p>⚡ Fast Delivery Service</p>
+
+<p>💰 Affordable Prices</p>
+
+<p>🛡 Safe & Secure Ordering</p>
+
+<p>🤝 Support Local Restaurants</p>
+
+<p>😊 Customer Satisfaction is Our Priority</p>
+
+</div>
+
+<a href="../index.html" class="btn">Explore Food</a>
 
 </div>
 
 </section>
+
+<footer>
+
+© 2026 Food Nagri | Delivering Taste & Happiness
+
+</footer>
 
 </body>
 </html>
